@@ -49,36 +49,36 @@
       <div class='collapse navbar-collapse navbar-ex1-collapse'>
         <ul class='nav navbar-nav'>
            <li class='dropdown'>
-            <a href='#' class='dropdown-toggle' data-toggle='dropdown'>Player Section <b class='caret'></b></a>
+            <a href='#' class='dropdown-toggle' data-toggle='dropdown'>Игроки <b class='caret'></b></a>
             <ul class='dropdown-menu'>
-              <li><a href='player.php'>Player Editor</a></li>
+              <li><a href='player.php'>Редактор Игроков</a></li>
             </ul>
           </li>
           <li class='dropdown'>
-            <a href='#' class='dropdown-toggle' data-toggle='dropdown'>Vehicle Section <b class='caret'></b></a>
+            <a href='#' class='dropdown-toggle' data-toggle='dropdown'>Транспорт <b class='caret'></b></a>
             <ul class='dropdown-menu'>
-              <li><a href='vehicle.php'>Vehicle List</a></li>
+              <li><a href='vehicle.php'>Список Транспорта</a></li>
             </ul>
           </li>
           <li class='dropdown'>
-            <a href='#' class='dropdown-toggle' data-toggle='dropdown'>Addons Section <b class='caret'></b></a>
+            <a href='#' class='dropdown-toggle' data-toggle='dropdown'>Плагины <b class='caret'></b></a>
 
             <ul class='dropdown-menu'>
                 ".$addon_menu." 
             </ul>
           </li>
         <li class='dropdown'>
-            <a href='#' class='dropdown-toggle' data-toggle='dropdown'>Settings <b class='caret'></b></a>
+            <a href='#' class='dropdown-toggle' data-toggle='dropdown'>Настройки <b class='caret'></b></a>
             <ul class='dropdown-menu'>
-              <li><a href='manage_login.php'><span class='glyphicon glyphicon-user'></span> Manage Logins</a></li>
+              <li><a href='manage_login.php'><span class='glyphicon glyphicon-user'></span> Управление Учетками</a></li>
             </ul>
           </li>
         </ul>
         <ul class='nav navbar-nav navbar-right'>
           <li><a href='../index.php'>Главная Страница</a></li>
-            <p class='navbar-text'>Signed in as ". @$_SESSION['login_user'] ."</p>
+            <p class='navbar-text'>Вы вошли как ". @$_SESSION['login_user'] ."</p>
         <form class='navbar-form navbar-right' role='search' action='logout.php' method='post'>
-            <button class='btn btn-default' type='submit'>Logout</button>
+            <button class='btn btn-default' type='submit'>Выход</button>
         </form>
         </ul>
 
@@ -90,12 +90,8 @@
     </div><!-- Close Wrapper -->
     <div id='footer'>
         <div class='container' color: #999999;'>
-            <p class='text-center' style='margin-top: 20px; margin-bottom: 0px !important; color: #999999;'>Copyright © 2014 Altis Life Control Version 0.2 by <a href='http://revoplay.de/'>Pictureclass</a> - <a href='http://www.revoplay.de'>Revoplay.de</a>. All Rights Reserved.<br>                                      Only for Private Use. No Commercial Use. Advanced Permissions beyond this license may be available at <a xmlns:cc='http://creativecommons.org/ns#' href='mailto:pictureclass@revoplay.de' rel='cc:morePermissions'>pictureclass@revoplay.de</a>.</p>
+            <p class='text-center' style='margin-top: 20px; margin-bottom: 0px !important; color: #999999;'>Copyright © 2014 Altis Life Control Version 0.2. All Rights Reserved.<br></p>
                 <form action='https://www.paypal.com/cgi-bin/webscr' method='post' target='_top' class='text-center'>
-                    <input type='hidden' name='cmd' value='_s-xclick'>
-                    <input type='hidden' name='hosted_button_id' value='P8E8XVKTZ3BKG'>
-                    <input type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
-                    <img alt='' border='0' src='https://www.paypalobjects.com/de_DE/i/scr/pixel.gif' width='1' height='1'>
                 </form>
         </div>
     </div>

@@ -25,9 +25,9 @@ startHTML();
             <div class="thumbnail">
                 <img data-src="holder.js/300x200" src="../img/player_list.jpg" alt="Player List">
                 <div class="caption">
-                    <h3>Player List</h3>
+                    <h3>Список Игроков</h3>
                     <p>See your Players and Manage them. Delete, change Inventory, set Police, Admin or Donator Status. And many more.</p>
-                    <p><a href="player.php" class="btn btn-primary" role="button">Player List</a></p>
+                    <p><a href="player.php" class="btn btn-primary" role="button">Список Игроков</a></p>
                 </div>
             </div>
         </div>
@@ -35,9 +35,9 @@ startHTML();
             <div class="thumbnail">
                 <img data-src="holder.js/300x200" src="../img/vehicle_list.jpg" alt="...">
                 <div class="caption">
-                    <h3>Vehicle List</h3>
+                    <h3>Список Транспорта</h3>
                     <p>List the Vehicles, see the owner, and watch the inventory of the Cars. You can sort it after Type and Side.</p>
-                    <p><a href="vehicles.php" class="btn btn-primary" role="button">Vehicle List</a></p>
+                    <p><a href="vehicles.php" class="btn btn-primary" role="button">Список Транспорта</a></p>
                 </div>
             </div>
         </div>
@@ -45,9 +45,9 @@ startHTML();
             <div class="thumbnail">
                 <img data-src="holder.js/300x200" src="../img/houses_list.jpg" alt="Houses List">
                 <div class="caption">
-                    <h3>Houses List</h3>
+                    <h3>Список Домов</h3>
                     <p>See the Houses bought by your ritch players. You can see the Inventory, the Owner and the Trunk. Thats so great.</p>
-                    <p><a href="house.php" class="btn btn-primary" role="button">Houses List</a></p>
+                    <p><a href="house.php" class="btn btn-primary" role="button">Список Домов</a></p>
                 </div>
             </div>
         </div>
@@ -62,15 +62,15 @@ $bankacc_SQL = mysql_query("SELECT uid,name,cash,bankacc FROM players ORDER BY b
         <div class="col-md-4">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Top 10 Newest Player</h3>
+                    <h3 class="panel-title">Топ 10 Новых Игроков</h3>
                 </div>
                 <div class="panel-body">
                     <table class="table table-hover">
                         <tr>
                             <td>ID</td>
-                            <td>Name</td>
-                            <td>Cash</td>
-                            <td>Bank</td>
+                            <td>Имя</td>
+                            <td>Наличка</td>
+                            <td>Банк</td>
                         </tr>
                 <?php while($row = mysql_fetch_object($new_SQL)){ ?>
                         <tr>
@@ -87,15 +87,15 @@ $bankacc_SQL = mysql_query("SELECT uid,name,cash,bankacc FROM players ORDER BY b
         <div class="col-md-4">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Top 10 Cash</h3>
+                    <h3 class="panel-title">Топ 10 Налички</h3>
                 </div>
                 <div class="panel-body">
                     <table class="table table-hover">
                         <tr>
                             <td>ID</td>
-                            <td>Name</td>
-                            <td>Cash</td>
-                            <td>Bank</td>
+                            <td>Имя</td>
+                            <td>Наличка</td>
+                            <td>Банк</td>
                         </tr>
                 <?php while($row = mysql_fetch_object($cash_SQL)){ ?>
                         <tr>
@@ -112,15 +112,15 @@ $bankacc_SQL = mysql_query("SELECT uid,name,cash,bankacc FROM players ORDER BY b
         <div class="col-md-4">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Top 10 Bank Account</h3>
+                    <h3 class="panel-title">Топ 10 Банк.Счет</h3>
                 </div>
                 <div class="panel-body">
                     <table class="table table-hover">
                         <tr>
                             <td>ID</td>
-                            <td>Name</td>
-                            <td>Cash</td>
-                            <td>Bank</td>
+                            <td>Имя</td>
+                            <td>Наличка</td>
+                            <td>Банк</td>
                         </tr>
                 <?php while($row = mysql_fetch_object($bankacc_SQL)){ ?>
                         <tr>

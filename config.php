@@ -3,10 +3,10 @@
 //////////////////////////////// MYSQL SETTINGS /////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////
 
-$dbhost = "127.0.0.1:3306";        //Database IP or Domain
-$dbname = "arma3life";              //Database Name
-$dbuser = "johnDoe";           		//Database User with writing rights
-$dbpswd = "SecretPassword";    		//Database User Password
+$dbhost = "176.221.9.138:3316";        //Database IP or Domain
+$dbname = "arma3life_test";              //Database Name
+$dbuser = "server";           		//Database User with writing rights
+$dbpswd = "3nsj2pXlgz";    		//Database User Password
 
 /////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////// SETTINGS ////////////////////////////////////////////

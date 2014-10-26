@@ -125,13 +125,13 @@ startHTML();
             <div class="row">
                 <ol class="breadcrumb">
                     <li><a href="index.php">Главная</a></li>
-                    <li class="active">Vehicle List</li>
+                    <li class="active">Список Транспорта</li>
                 </ol>
             </div>
             <div class="panel panel-default">
-                <div class="panel-heading"><span class='glyphicon glyphicon-road'></span> Vehicle List </div>
+                <div class="panel-heading"><span class='glyphicon glyphicon-road'></span> Список Транспорта </div>
                 <div class="panel-body">
-                    <p>Here you can view, edit or remove Vehicles from your Server</p>
+                    <p>Сдесь вы можете просматривать, редактировать или удалять транспорт из базы данных.</p>
                     <div class="row">
 <!-- Simple Placeholder -->
                         <div class="col-lg-9">
@@ -142,19 +142,19 @@ startHTML();
                         <div class="col-lg-3" style="margin:20px 0;">
                             <div class="input-group" >
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="search" placeholder="Search" <?php if (isset($_GET['search'])){echo "value='".$_GET['search']."'";}?>>
+                                    <input type="text" class="form-control" name="search" placeholder="Поиск" <?php if (isset($_GET['search'])){echo "value='".$_GET['search']."'";}?>>
                                     <span class="input-group-btn">
                                         <button class="btn btn-default" type="submit">Go!</button>
                                     </span>
                                 </div><!-- /input-group -->
                                 <label class="radio-inline">
-                                    <input type="radio" name="searchtype" value="name" checked> Vehicle Name
+                                    <input type="radio" name="searchtype" value="name" checked> Название Трансп.
                                 </label>
                                 <label class="radio-inline">
                                     <input type="radio" name="searchtype" value="id"> ID
                                 </label>
                                 <label class="radio-inline">
-                                    <input type="radio" name="searchtype" value="playername"> Player
+                                    <input type="radio" name="searchtype" value="playername"> Игрок
                                 </label>
                             </div><!-- /.col-lg-6 -->
                         </div>
@@ -222,13 +222,13 @@ startHTML();
                     <thead>
                         <tr>
                             <td class="text-center"><strong>#</strong> <a href="vehicle.php?sort=uid&type=ASC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes"></span></a><a href="vehicle.php?sort=uid&type=DESC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span></a></td>
-                            <td class="text-center"><strong>Name</strong> <a href="vehicle.php?sort=name&type=ASC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-alphabet"></span></a><a href="vehicle.php?sort=name&type=DESC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-alphabet-alt"></span></a></td>
-                            <td class="text-center"><strong>Type</strong> <a href="vehicle.php?sort=type&type=ASC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes"></span></a><a href="vehicle.php?sort=type&type=DESC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span></a></td>
-                            <td class="text-center"><strong>Owner</strong> <a href="vehicle.php?sort=pid&type=ASC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes"></span></a><a href="vehicle.php?sort=pid&type=DESC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span></a></td>
-                            <td class="text-center"><strong>Side</strong> <a href="vehicle.php?sort=side&type=ASC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes"></span></a><a href="vehicle.php?sort=side&type=DESC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span></a></td>
+                            <td class="text-center"><strong>Название</strong> <a href="vehicle.php?sort=name&type=ASC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-alphabet"></span></a><a href="vehicle.php?sort=name&type=DESC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-alphabet-alt"></span></a></td>
+                            <td class="text-center"><strong>Тип</strong> <a href="vehicle.php?sort=type&type=ASC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes"></span></a><a href="vehicle.php?sort=type&type=DESC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span></a></td>
+                            <td class="text-center"><strong>Владелец</strong> <a href="vehicle.php?sort=pid&type=ASC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes"></span></a><a href="vehicle.php?sort=pid&type=DESC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span></a></td>
+                            <td class="text-center"><strong>Сторона</strong> <a href="vehicle.php?sort=side&type=ASC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes"></span></a><a href="vehicle.php?sort=side&type=DESC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span></a></td>
                             <td class="text-center"><strong>Alive</strong> <a href="vehicle.php?sort=alive&type=ASC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes"></span></a><a href="vehicle.php?sort=alive&type=DESC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span></a></td>
                             <td class="text-center"><strong>Active</strong> <a href="vehicle.php?sort=active&type=ASC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes"></span></a><a href="vehicle.php?sort=active&type=DESC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span></a></td>
-                            <td class="text-center"><strong>Settings</strong></td>
+                            <td class="text-center"><strong>Настройки</strong></td>
                         </tr>
                     </thead>
                     <tbody>
@@ -236,7 +236,7 @@ startHTML();
                         //CHECH IF QUERRYRESULT EMPTY OR FALSE AND IF SEARCH
                         if(mysql_num_rows($vehicle_SQL) < 1 && isset($_GET['search'])){
                             //DISPLAY INFORMATION THAT QUERRY FALSE OR EMPTY
-                            echo "<tr><td colspan=9 class='text-center'><h2><span class='label label-info'>Empty Search Result</span></h2></td></tr> ";
+                            echo "<tr><td colspan=9 class='text-center'><h2><span class='label label-info'>Пустой Поисковый Запрос</span></h2></td></tr> ";
                         }
                         elseif(mysql_num_rows($vehicle_SQL) < 1){
                             echo "<tr><td colspan=9 class='text-center'><h2><span class='label label-info'>No Results</span></h2></td></tr> ";
@@ -264,19 +264,19 @@ startHTML();
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                    <h4 class="modal-title"><span class="glyphicon glyphicon-pencil"></span> Delete <?php echo $row->classname;?></h4>
+                                    <h4 class="modal-title"><span class="glyphicon glyphicon-pencil"></span> Удалить <?php echo $row->classname;?></h4>
                                 </div>
                                 <div class="modal-body">
                                     <div class="form-group">
                                         <form method="post" action="vehicle.php#vehicles_delete_<?php echo $row->id;?>" role="form"> 
                                             <input type="hidden" name="type" value="delete" />
                                             <input type="hidden" name="id" value="<?php echo $row->id;?>" />
-                                            <p>Do you realy want to delete the Vehicle "<?php echo $row->classname;?>" from the User <?php echo $row->name;?>?</p>                                    
+                                            <p>Вы действительно хотите удалить транспортное средство? "<?php echo $row->classname;?>" from the User <?php echo $row->name;?>?</p>                                    
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button class="btn btn-default" data-dismiss="modal" type="reset">Cancel</button>
-                                    <button class="btn btn-primary" type="submit">Delete Vehicle</button>
+                                    <button class="btn btn-default" data-dismiss="modal" type="reset">Отмена</button>
+                                    <button class="btn btn-primary" type="submit">Удалить</button>
                                 </form>
                                 </div>
                             </div>

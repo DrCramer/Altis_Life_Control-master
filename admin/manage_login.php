@@ -145,28 +145,28 @@ startHTML();
             <div class="row">
                 <ol class="breadcrumb">
                     <li><a href="index.php">Главная</a></li>
-                    <li><a href="#">Settings</a></li>
-                    <li class="active">Manage Logins</li>
+                    <li><a href="#">Настройки</a></li>
+                    <li class="active">Управление Учетками</li>
                 </ol>
             </div>
             <div class="row">
                 <div class="col-md-8"></div> 
                 <div class="col-md-4" style="padding-right: 0 !important;">
-                    <p style="float:right;"><a data-toggle="modal" href="manage_login.php#user_new" ><button class="btn btn-default" style="float: right;"><span class="glyphicon glyphicon-plus"></span> Add User</button></a></p>
+                    <p style="float:right;"><a data-toggle="modal" href="manage_login.php#user_new" ><button class="btn btn-default" style="float: right;"><span class="glyphicon glyphicon-plus"></span> Добавить Пользователя</button></a></p>
                 </div>
             </div>
             <div class="row">
             <div class="panel panel-default">
-                <div class="panel-heading"><span class='glyphicon glyphicon-user'></span> Manage Logins </div>
+                <div class="panel-heading"><span class='glyphicon glyphicon-user'></span> Управление Учетными Записями </div>
                 <div class="panel-body">
-                    <p>Here you can add, edit or remove Users for DayZ Control</p>
+                    <p>Сдесь вы можете просматривать, редактировать или удалять учетные записи администраторов из базы данных.</p>
                 </div>
             <table class="table table-hover">
                 <tr>
                     <td>#</td>
-                    <td>Name</td>
+                    <td>Ник</td>
                     <td>E-Mail</td>
-                    <td>Settings</td>
+                    <td>Настройки</td>
                 </tr>
                 <?php foreach ($list_logins AS $id => $logins): ?>
                 <tr>
@@ -184,7 +184,7 @@ startHTML();
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                <h4 class="modal-title"><span class="glyphicon glyphicon-pencil"></span> Edit <?php echo $logins[0];?></h4>
+                                <h4 class="modal-title"><span class="glyphicon glyphicon-pencil"></span> Редактирование <?php echo $logins[0];?></h4>
                             </div>
                             <div class="modal-body">
                                 <?php
@@ -204,16 +204,16 @@ startHTML();
                                         <input type="text" class="form-control" name="new_username" value="<?php echo $logins[0];?>" />
                                         <label for="exampleInputEmail1">E-Mail</label>
                                         <input type="text" class="form-control" name="new_email" value="<?php echo $logins[3];?>" />
-                                        <label for="exampleInputEmail1">New Password</label>
+                                        <label for="exampleInputEmail1">Новый Пароль</label>
                                         <input type="password" class="form-control" placeholder="Enter Password" name="new_password" />
-                                        <label for="exampleInputEmail1">Re-Enter new Password</label>
+                                        <label for="exampleInputEmail1">Повторить Пароль</label>
                                         <input type="password" class="form-control" placeholder="Re-Enter Password" name="new_password_2" />
                                     
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <button class="btn btn-default" data-dismiss="modal" type="reset">Close</button>
-                                <button class="btn btn-primary" type="submit">Save changes</button>
+                                <button class="btn btn-default" data-dismiss="modal" type="reset">Закрыть</button>
+                                <button class="btn btn-primary" type="submit">Сохранить</button>
                             </form>
                             </div>
                         </div>
@@ -232,12 +232,12 @@ startHTML();
                                     <form method="post" action="manage_login.php#user_edit_<?php echo $id;?>" role="form"> 
                                         <input type="hidden" name="type" value="delete" />
                                         <input type="hidden" name="id" value="<?php echo $id;?>" />
-                                        <p>Do you realy want to delete the User "<?php echo $logins[0];?>"?</p>                                    
+                                        <p>Вы действительно хотите удалить пользователя "<?php echo $logins[0];?>"?</p>                                    
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <button class="btn btn-default" data-dismiss="modal" type="reset">Close</button>
-                                <button class="btn btn-primary" type="submit">Delete User</button>
+                                <button class="btn btn-default" data-dismiss="modal" type="reset">Закрыть</button>
+                                <button class="btn btn-primary" type="submit">Удалить</button>
                             </form>
                             </div>
                         </div>
@@ -252,7 +252,7 @@ startHTML();
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                <h4 class="modal-title"><span class="glyphicon glyphicon-plus"></span> Create New User</h4>
+                                <h4 class="modal-title"><span class="glyphicon glyphicon-plus"></span> Создать Нового Пользователя</h4>
                             </div>
                             <div class="modal-body">
                                 <?php
@@ -271,16 +271,16 @@ startHTML();
                                         <input type="text" class="form-control" name="new_username" />
                                         <label for="exampleInputEmail1">E-Mail</label>
                                         <input type="text" class="form-control" name="new_email" />
-                                        <label for="exampleInputEmail1">New Password</label>
+                                        <label for="exampleInputEmail1">Новый Пароль</label>
                                         <input type="password" class="form-control" placeholder="Enter Password" name="new_password" />
-                                        <label for="exampleInputEmail1">Re-Enter new Password</label>
+                                        <label for="exampleInputEmail1">Повторить Новый Пароль</label>
                                         <input type="password" class="form-control" placeholder="Re-Enter Password" name="new_password_2" />
                                     
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <button class="btn btn-default" data-dismiss="modal" type="reset">Close</button>
-                                <button class="btn btn-primary" type="submit">Save changes</button>
+                                <button class="btn btn-default" data-dismiss="modal" type="reset">Закрыть</button>
+                                <button class="btn btn-primary" type="submit">Сохранить</button>
                             </form>
                             </div>
                         </div>

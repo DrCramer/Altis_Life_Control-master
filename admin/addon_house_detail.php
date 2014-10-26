@@ -73,7 +73,7 @@ $row = mysql_fetch_object($house_detail_SQL);
         <div class="row">
             <ol class="breadcrumb">
                 <li><a href="index.php">Start</a></li>
-                <li><a href="addon_houses.php">Houses List</a></li>
+                <li><a href="addon_houses.php">Список Домов</a></li>
                 <li class="active"><?php echo "ID: ".$row->id." Owner: ".$row->name; ?></li>
             </ol>
         </div>

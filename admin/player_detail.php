@@ -211,7 +211,7 @@ else{
                 <p class="text-center"><img src="../img/bank.png"> <strong><?php echo money($row->bankacc);?></strong> <img src="../img/money.png"> <strong><?php echo money($row->cash);?></strong></p>
             </li>
             <li class="list-group-item">
-                <p class="text-center"><strong>Aliases</strong></p>
+                <p class="text-center"><strong>Псевдоним</strong></p>
                 <p class="text-center"><?php echo substr($row->aliases,3,-3);?></p>
             </li>
         </ul>
@@ -247,7 +247,7 @@ else{
             
             <div class="panel panel-default">
                 <div class="panel-body">
-                    CIV LICENSES <a data-toggle="modal" href="#edit_civ_licenses" class="btn btn-primary" style="float: right;"><span class="glyphicon glyphicon-pencil"></span></a>
+                    Лицензии Гражданского <a data-toggle="modal" href="#edit_civ_licenses" class="btn btn-primary" style="float: right;"><span class="glyphicon glyphicon-pencil"></span></a>
                 </div>            
                 <div class="well ">
 
@@ -281,7 +281,7 @@ else{
             
             <div class="panel panel-default">
                 <div class="panel-body">
-                    COP LICENSES <a data-toggle="modal" href="#edit_cop_licenses" class="btn btn-primary" style="float: right;"><span class="glyphicon glyphicon-pencil"></span></a>
+                    Лицензии Полицейского<a data-toggle="modal" href="#edit_cop_licenses" class="btn btn-primary" style="float: right;"><span class="glyphicon glyphicon-pencil"></span></a>
                 </div>            
                 <div class="well ">
                     <!-- COP Licenses CONTENT -->
@@ -309,7 +309,7 @@ else{
 
             <div class="panel panel-default">
                 <div class="panel-body">
-                    Medic LICENSES <a data-toggle="modal" href="#edit_medic_licenses" class="btn btn-primary" style="float: right;"><span class="glyphicon glyphicon-pencil"></span></a>
+                    Лицензии Медиков <a data-toggle="modal" href="#edit_medic_licenses" class="btn btn-primary" style="float: right;"><span class="glyphicon glyphicon-pencil"></span></a>
                 </div>            
                 <div class="well ">
                     <!-- Medic Licenses CONTENT -->
@@ -474,7 +474,7 @@ else{
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title"><span class="glyphicon glyphicon-pencil"></span> Edit Basic Character Settings</h4>
+                <h4 class="modal-title"><span class="glyphicon glyphicon-pencil"></span> Редактирование Основных Праметров Игрока</h4>
             </div>
             <form method="post" action="player_detail.php?uid=<?php echo $row->uid;?>" role="form">
             <div class="modal-body">
@@ -484,7 +484,7 @@ else{
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label class="col-sm-12 control-label">
-                                    Cop Level
+                                    Уровень Копа
                                 </label>
                                 <select class="form-control" name="coplevel">
                                 <?php
@@ -503,7 +503,7 @@ else{
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label class="col-sm-12 control-label">
-                                    Medic Level
+                                    Уровень Медика
                                 </label>
                                 <select class="form-control" name="mediclevel">
                                 <?php
@@ -522,7 +522,7 @@ else{
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label class="col-sm-12 control-label">
-                                    Donator Level
+                                    Уровень VIP
                                 </label>
                                 <select class="form-control" name="donatorlvl">
                                     <?php
@@ -541,7 +541,7 @@ else{
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label class="col-sm-12 control-label">
-                                    Admin Level
+                                    Уровень Админа
                                 </label>
                                 <select class="form-control" name="adminlevel">
                                     <?php
@@ -560,17 +560,17 @@ else{
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <label>Cash</label>
+                            <label>Наличность</label>
                             <input class="form-control" name="cash" type="text" value="<?php echo $row->cash; ?>"/>
                         </div>
                         <div class="col-md-6">
-                            <label>Bankaccount</label>
+                            <label>Банковский Счет</label>
                             <input class="form-control" name="bankacc" type="text" value="<?php echo $row->bankacc; ?>"/>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <label>Arrested</label> 
+                            <label>Арестован</label> 
                             <select class="form-control" name="arrested">
                                     <?php
                                     for ( $x = 0; $x < 2; $x++){
@@ -585,7 +585,7 @@ else{
                                 </select>
                         </div>
                         <div class="col-md-6">
-                            <label>Blacklisted</label> 
+                            <label>Заблокирован</label> 
                             <select class="form-control" name="blacklist">
                                     <?php
                                     for ( $x = 0; $x < 2; $x++){
@@ -603,8 +603,8 @@ else{
                 </div>
             </div>
             <div class="modal-footer">
-                <button class="btn btn-default" data-dismiss="modal" type="reset">Close</button>
-                <button class="btn btn-primary" type="submit">Save changes</button>
+                <button class="btn btn-default" data-dismiss="modal" type="reset">Закрыть</button>
+                <button class="btn btn-primary" type="submit">Сохранить</button>
             </div>
             </form>
         </div>

@@ -9,6 +9,6 @@ $lang_de_error_empty_password_2="Die eingegebenen Passw&ouml;rter stimmen nicht 
 $lang_de_error_portal_user_login_password_empty="Bitte das Passwort eingeben";
 $lang_de_error_portal_user_login_user_empty="Bitte den Benutzernamen eingeben";
 $lang_de_error_portal_user_login_user_db_check="Der eingegebene Benutzername ist nicht vorhanden";
-$lang_de_error_portal_user_login_user_pswd_check="Das eingegebene Passwort ist falsch";
+$lang_de_error_portal_user_login_user_pswd_check="Введенный вами пароль неверен";
 
 ?>

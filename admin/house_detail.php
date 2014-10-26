@@ -69,8 +69,8 @@ $row = mysql_fetch_object($house_detail_SQL);
     <div class="row">
         <div class="row">
             <ol class="breadcrumb">
-                <li><a href="index.php">Start</a></li>
-                <li><a href="house.php">Houses List</a></li>
+                <li><a href="index.php">Главная</a></li>
+                <li><a href="house.php">Список Домов</a></li>
                 <li class="active"><?php echo "ID: ".$row->id." Owner: ".$row->name; ?></li>
             </ol>
         </div>
@@ -79,8 +79,8 @@ $row = mysql_fetch_object($house_detail_SQL);
             <div class="thumbnail">
                 <ul class="list-group">
                     <li class="list-group-item">
-                        <h4 class="text-center">House ID: <?php echo $row->id; ?></h4>
-                        <p class="text-center">Owner: <?php echo "<a href='player_detail.php?uid=".$row->uid."'>".$row->name."</a>";?></p>
+                        <h4 class="text-center">ID Дома: <?php echo $row->id; ?></h4>
+                        <p class="text-center">Владелец: <?php echo "<a href='player_detail.php?uid=".$row->uid."'>".$row->name."</a>";?></p>
                     </li>
                     <li class="list-group-item">
                         <h4 style="margin-top: 10px !important;">
@@ -97,7 +97,7 @@ $row = mysql_fetch_object($house_detail_SQL);
                         </h4>
                     </li>
                     <li class="list-group-item">
-                        <p class="text-center">Position</p>
+                        <p class="text-center">Позиция</p>
                         <p class="text-center"><small><?php echo $row->pos;?></small></p>
                     </li>
                 </ul>
@@ -157,7 +157,7 @@ $row = mysql_fetch_object($house_detail_SQL);
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label>Owner ID</label>
+                                    <label>ID Владельца</label>
                                     <input class="form-control" name="pid" type="text" value="<?php echo $row->pid; ?>"/>
                                 </div>
                             </div>
@@ -185,7 +185,7 @@ $row = mysql_fetch_object($house_detail_SQL);
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label>Position</label>
+                                    <label>Позиция</label>
                                     <input class="form-control" name="position" type="text" value="<?php echo htmlspecialchars($row->pos); ?>"/>
                                 </div>
                             </div>
@@ -216,7 +216,7 @@ $row = mysql_fetch_object($house_detail_SQL);
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label>Inventory</label>
+                                    <label>Инвентарь</label>
                                     <textarea class="form-control" rows="8" name="trunk"><?php echo $row->inventory;?></textarea>
                                 </div>
                             </div>
@@ -224,7 +224,7 @@ $row = mysql_fetch_object($house_detail_SQL);
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label>Containers</label>
+                                    <label>Ящики</label>
                                     <textarea class="form-control" rows="8" name="weapon_storage"><?php echo $row->containers;?></textarea>
                                 </div>
                             </div>
@@ -247,18 +247,18 @@ $row = mysql_fetch_object($house_detail_SQL);
             <form method="post" action="house_detail.php?id=<?php echo $row->id;?>" role="form">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title"><span class="glyphicon glyphicon-pencil"></span> Delete <?php echo $row->id;?></h4>
+                    <h4 class="modal-title"><span class="glyphicon glyphicon-pencil"></span> Удалить <?php echo $row->id;?></h4>
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
                         <input type="hidden" name="type" value="delete" />
                         <input type="hidden" name="id" value="<?php echo $id;?>" />
-                        <p>Do you realy want to delete the House with the ID <strong>"<?php echo $row->id;?>" </strong>- Owner <strong><?php echo $row->name;?></strong> ?</p>                                    
+                        <p>Вы действительно хотите удалить дом вместе с ID? <strong>"<?php echo $row->id;?>" </strong>- Владелец <strong><?php echo $row->name;?></strong> ?</p>                                    
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-default" data-dismiss="modal" type="reset">Close</button>
-                    <button class="btn btn-primary" type="submit">Delete House</button>
+                    <button class="btn btn-default" data-dismiss="modal" type="reset">Закрыть</button>
+                    <button class="btn btn-primary" type="submit">Удалить Дом</button>
                 </div>
             </form>
         </div>

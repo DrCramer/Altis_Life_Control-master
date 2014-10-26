@@ -92,10 +92,10 @@ if (!empty($_POST)) {
             <div class="container">
                 <img src="img/logo.png" style="margin: auto;text-align: center;display: block;margin-top: 40px;"/>
                 <form class="form-signin" method='post' action='login.php'>
-                    <h2 class="form-signin-heading">Please sign in</h2>
-                    <input type="text" class="form-control" name='login_user' placeholder="Username" autofocus>
-                    <input type="password" class="form-control" name='login_password' placeholder="Password">
-                    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                    <h2 class="form-signin-heading">Пожалйста войдите</h2>
+                    <input type="text" class="form-control" name='login_user' placeholder="Логин" autofocus>
+                    <input type="password" class="form-control" name='login_password' placeholder="Пароль">
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">Войти</button>
                 </form>
             </div> <!-- /container -->
             <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

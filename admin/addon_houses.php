@@ -46,9 +46,9 @@ startHTML();
    <div class="container" style="padding-top: 60px;">
             <div class="row">
                 <ol class="breadcrumb">
-                    <li><a href="index.php">Start</a></li>
-                    <li><a href="index.php">Addons</a></li>
-                    <li class="active">Houses List</li>
+                    <li><a href="index.php">Главная</a></li>
+                    <li><a href="index.php">Плагины</a></li>
+                    <li class="active">Список Домов</li>
                 </ol>
             </div>
            
@@ -56,16 +56,16 @@ startHTML();
             <div class="panel panel-default">
                 <div class="panel-heading"><span class='glyphicon glyphicon-user'></span> Houses List </div>
                 <div class="panel-body">
-                    <p>Here you can view, edit or remove Houses from your Server</p>
+                    <p>Сдесь вы можете просматривать, редактировать или удалять дома из базы данных.</p>
                 </div>
             <table class="table table-hover">
                 <tr>
                     <td><strong>#</strong> <a href="addon_houses.php?sort=id&type=ASC" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes"></span></a><a href="addon_houses.php?sort=id&type=DESC" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span></a></td>
-                    <td><strong>House ID</strong> <a href="addon_houses.php?sort=house_id&type=ASC" style="color:grey;"><span class="glyphicon glyphicon-sort-by-alphabet"></span></a><a href="addon_houses.php?sort=house_id&type=DESC" style="color:grey;"><span class="glyphicon glyphicon-sort-by-alphabet-alt"></span></a></td>
-                    <td><strong>Owner</strong> <a href="addon_houses.php?sort=name&type=ASC" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes"></span></a><a href="addon_houses.php?sort=name&type=DESC" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span></a></td>
+                    <td><strong>ID Дома</strong> <a href="addon_houses.php?sort=house_id&type=ASC" style="color:grey;"><span class="glyphicon glyphicon-sort-by-alphabet"></span></a><a href="addon_houses.php?sort=house_id&type=DESC" style="color:grey;"><span class="glyphicon glyphicon-sort-by-alphabet-alt"></span></a></td>
+                    <td><strong>Владелец</strong> <a href="addon_houses.php?sort=name&type=ASC" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes"></span></a><a href="addon_houses.php?sort=name&type=DESC" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span></a></td>
                     <td><strong>Occupied</strong> <a href="addon_houses.php?sort=occupied&type=ASC" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes"></span></a><a href="addon_houses.php?sort=occupied&type=DESC" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span></a></td>
-                    <td><strong>Locked</strong> <a href="addon_houses.php?sort=locked&type=ASC" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes"></span></a><a href="addon_houses.php?sort=locked&type=DESC" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span></a></td>
-                    <td><strong>Settings</strong></td>
+                    <td><strong>Закрыт</strong> <a href="addon_houses.php?sort=locked&type=ASC" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes"></span></a><a href="addon_houses.php?sort=locked&type=DESC" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span></a></td>
+                    <td><strong>Настройки</strong></td>
                 </tr>
                 <?php while($row = mysql_fetch_object($houses_SQL)){ ?>
                 <tr>
@@ -84,19 +84,19 @@ startHTML();
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                <h4 class="modal-title"><span class="glyphicon glyphicon-pencil"></span> Delete <?php echo $row->id;?></h4>
+                                <h4 class="modal-title"><span class="glyphicon glyphicon-pencil"></span> Удалить <?php echo $row->id;?></h4>
                             </div>
                             <div class="modal-body">
                                 <div class="form-group">
                                     <form method="post" action="addon_houses.php#houses_delete_<?php echo $row->id;?>" role="form"> 
                                         <input type="hidden" name="type" value="delete" />
                                         <input type="hidden" name="id" value="<?php echo $row->id;?>" />
-                                        <p>Do you realy want to delete the House ID "<?php echo $row->id;?>" from the User <?php echo $row->name;?>?</p>                                    
+                                        <p>Вы действительно хотите удалить ID дома? "<?php echo $row->id;?>" from the User <?php echo $row->name;?>?</p>                                    
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <button class="btn btn-default" data-dismiss="modal" type="reset">Cancel</button>
-                                <button class="btn btn-primary" type="submit">Delete House</button>
+                                <button class="btn btn-default" data-dismiss="modal" type="reset">Отмена</button>
+                                <button class="btn btn-primary" type="submit">Удалить Дом</button>
                             </form>
                             </div>
                         </div>

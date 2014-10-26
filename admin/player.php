@@ -125,13 +125,13 @@ startHTML();
             <div class="row">
                 <ol class="breadcrumb">
                     <li><a href="index.php">Главная</a></li>
-                    <li class="active">Player List</li>
+                    <li class="active">Список Игроков</li>
                 </ol>
             </div>
             <div class="panel panel-default">
-                <div class="panel-heading"><span class='glyphicon glyphicon-user'></span> Player List </div>
+                <div class="panel-heading"><span class='glyphicon glyphicon-user'></span> Список Игроков </div>
                 <div class="panel-body">
-                    <p>Here you can view, edit or remove Players from your Server</p>
+                    <p>Сдесь вы можете просматривать, редактировать или удалять игроков из базы данных.</p>
                     <div class="row">
 <!-- A-Z RANGE AREA -->
                         <div class="col-lg-9">
@@ -161,13 +161,13 @@ startHTML();
                         <div class="col-lg-3" style="margin:20px 0;">
                             <div class="input-group" >
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="search" placeholder="Search" <?php if (isset($_GET['search'])){echo "value='".$_GET['search']."'";}?>>
+                                    <input type="text" class="form-control" name="search" placeholder="Поиск" <?php if (isset($_GET['search'])){echo "value='".$_GET['search']."'";}?>>
                                     <span class="input-group-btn">
                                         <button class="btn btn-default" type="submit">Go!</button>
                                     </span>
                                 </div><!-- /input-group -->
                                 <label class="radio-inline">
-                                    <input type="radio" name="searchtype" value="name" checked> Player Name
+                                    <input type="radio" name="searchtype" value="name" checked> Имя Игрока
                                 </label>
                                 <label class="radio-inline">
                                     <input type="radio" name="searchtype" value="id"> ID
@@ -241,14 +241,14 @@ startHTML();
                     <thead>
                         <tr>
                             <td class="text-center"><strong>#</strong> <a href="player.php?sort=uid&type=ASC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes"></span></a><a href="player.php?sort=uid&type=DESC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span></a></td>
-                            <td class="text-center"><strong>Name</strong> <a href="player.php?sort=PlayerName&type=ASC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-alphabet"></span></a><a href="player.php?sort=PlayerName&type=DESC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-alphabet-alt"></span></a></td>
-                            <td class="text-center"><strong>Cash</strong> <a href="player.php?sort=cash&type=ASC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes"></span></a><a href="player.php?sort=cash&type=DESC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span></a></td>
-                            <td class="text-center"><strong>Bank</strong> <a href="player.php?sort=bankacc&type=ASC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes"></span></a><a href="player.php?sort=bankacc&type=DESC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span></a></td>
-                            <td class="text-center"><strong>Cop</strong> <a href="player.php?sort=coplevel&type=ASC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes"></span></a><a href="player.php?sort=coplevel&type=DESC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span></a></td>
-                            <td class="text-center"><strong>Medic</strong> <a href="player.php?sort=mediclevel&type=ASC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes"></span></a><a href="player.php?sort=mediclevel&type=DESC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span></a></td>
-                            <td class="text-center"><strong>Donator</strong> <a href="player.php?sort=donatorlvl&type=ASC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes"></span></a><a href="player.php?sort=donatorlvl&type=DESC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span></a></td>
-                            <td class="text-center"><strong>Admin</strong> <a href="player.php?sort=adminlevel&type=ASC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes"></span></a><a href="player.php?sort=adminlevel&type=DESC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span></a></td>
-                            <td class="text-center"><strong>Settings</strong></td>
+                            <td class="text-center"><strong>Имя</strong> <a href="player.php?sort=PlayerName&type=ASC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-alphabet"></span></a><a href="player.php?sort=PlayerName&type=DESC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-alphabet-alt"></span></a></td>
+                            <td class="text-center"><strong>Наличка</strong> <a href="player.php?sort=cash&type=ASC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes"></span></a><a href="player.php?sort=cash&type=DESC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span></a></td>
+                            <td class="text-center"><strong>Банк</strong> <a href="player.php?sort=bankacc&type=ASC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes"></span></a><a href="player.php?sort=bankacc&type=DESC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span></a></td>
+                            <td class="text-center"><strong>Коп</strong> <a href="player.php?sort=coplevel&type=ASC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes"></span></a><a href="player.php?sort=coplevel&type=DESC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span></a></td>
+                            <td class="text-center"><strong>Медик</strong> <a href="player.php?sort=mediclevel&type=ASC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes"></span></a><a href="player.php?sort=mediclevel&type=DESC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span></a></td>
+                            <td class="text-center"><strong>VIP</strong> <a href="player.php?sort=donatorlvl&type=ASC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes"></span></a><a href="player.php?sort=donatorlvl&type=DESC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span></a></td>
+                            <td class="text-center"><strong>Админ</strong> <a href="player.php?sort=adminlevel&type=ASC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes"></span></a><a href="player.php?sort=adminlevel&type=DESC<?php if(isset($_GET['letter'])) {echo "&letter=".$_GET['letter'];}?><?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span></a></td>
+                            <td class="text-center"><strong>Настройки</strong></td>
                         </tr>
                     </thead>
                     <tbody>
@@ -256,7 +256,7 @@ startHTML();
                         //CHECH IF QUERRYRESULT EMPTY OR FALSE AND IF SEARCH
                         if(mysql_num_rows($player_SQL) < 1 && isset($_GET['search'])){
                             //DISPLAY INFORMATION THAT QUERRY FALSE OR EMPTY
-                            echo "<tr><td colspan=9 class='text-center'><h2><span class='label label-info'>Empty Search Result</span></h2></td></tr> ";
+                            echo "<tr><td colspan=9 class='text-center'><h2><span class='label label-info'>Пустой Поисковый Запрос</span></h2></td></tr> ";
                         }
                         elseif(mysql_num_rows($player_SQL) < 1){
                             echo "<tr><td colspan=9 class='text-center'><h2><span class='label label-info'>No Results</span></h2></td></tr> ";
@@ -285,19 +285,19 @@ startHTML();
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                        <h4 class="modal-title"><span class="glyphicon glyphicon-pencil"></span> Delete <?php echo $row->name;?></h4>
+                                        <h4 class="modal-title"><span class="glyphicon glyphicon-pencil"></span> Удалить <?php echo $row->name;?></h4>
                                     </div>
                                     <div class="modal-body">
                                         <div class="form-group">
                                             <form method="post" action="player.php#player_delete_<?php echo $row->uid;?>" role="form"> 
                                                 <input type="hidden" name="type" value="delete" />
                                                 <input type="hidden" name="id" value="<?php echo $row->uid;?>" />
-                                                <p>Do you realy want to delete the User "<?php echo $row->name;?>"?</p>                                    
+                                                <p>Вы действительно хотите удалить игрока? "<?php echo $row->name;?>"?</p>                                    
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button class="btn btn-default" data-dismiss="modal" type="reset">Cancel</button>
-                                        <button class="btn btn-primary" type="submit">Delete User</button>
+                                        <button class="btn btn-default" data-dismiss="modal" type="reset">Отмена</button>
+                                        <button class="btn btn-primary" type="submit">Удалить Игрока</button>
                                     </form>
                                     </div>
                                 </div>

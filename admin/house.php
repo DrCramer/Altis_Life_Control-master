@@ -105,13 +105,13 @@ startHTML();
             <div class="row">
                 <ol class="breadcrumb">
                     <li><a href="index.php">Start</a></li>
-                    <li class="active">House List</li>
+                    <li class="active">Список Домов</li>
                 </ol>
             </div>
             <div class="panel panel-default">
-                <div class="panel-heading"><span class='glyphicon glyphicon-home'></span> Houses List </div>
+                <div class="panel-heading"><span class='glyphicon glyphicon-home'></span> Список Домов</div>
                 <div class="panel-body">
-                    <p>Here you can view, edit or remove Houses from your Server</p>
+                    <p>Сдесь вы можете просматривать, редактировать или удалять дома из базы данных.</p>
                     <div class="row">
 <!-- Simple Placeholder -->
                         <div class="col-lg-9">
@@ -122,7 +122,7 @@ startHTML();
                         <div class="col-lg-3" style="margin:20px 0;">
                             <div class="input-group" >
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="search" placeholder="Search" <?php if (isset($_GET['search'])){echo "value='".$_GET['search']."'";}?>>
+                                    <input type="text" class="form-control" name="search" placeholder="Поиск" <?php if (isset($_GET['search'])){echo "value='".$_GET['search']."'";}?>>
                                     <span class="input-group-btn">
                                         <button class="btn btn-default" type="submit">Go!</button>
                                     </span>
@@ -131,7 +131,7 @@ startHTML();
                                     <input type="radio" name="searchposition" value="id"> ID
                                 </label>
                                 <label class="radio-inline">
-                                    <input type="radio" name="searchposition" value="playerowner"> Player
+                                    <input type="radio" name="searchposition" value="playerowner"> Игрок
                                 </label>
                             </div><!-- /.col-lg-6 -->
                         </div>
@@ -199,12 +199,12 @@ startHTML();
                     <thead>
                         <tr>
                             <td class="text-center"><strong>#</strong> <a href="house.php?sort=id&type=ASC<?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes"></span></a><a href="house.php?sort=id&type=DESC<?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span></a></td>
-                            <td class="text-center"><strong>Owner</strong> <a href="house.php?sort=name&type=ASC<?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-alphabet"></span></a><a href="house.php?sort=name&type=DESC<?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-alphabet-alt"></span></a></td>
-                            <td class="text-center"><strong>Position</strong> <a href="house.php?sort=pos&type=ASC<?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes"></span></a><a href="house.php?sort=pos&type=DESC<?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span></a></td>
-                            <td class="text-center"><strong>Inventory</strong> <a href="house.php?sort=inventory&type=ASC<?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes"></span></a><a href="house.php?sort=inventory&type=DESC<?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span></a></td>
-                            <td class="text-center"><strong>Containers</strong> <a href="house.php?sort=containers&type=ASC<?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes"></span></a><a href="house.php?sort=containers&type=DESC<?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span></a></td>
+                            <td class="text-center"><strong>Владелец</strong> <a href="house.php?sort=name&type=ASC<?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-alphabet"></span></a><a href="house.php?sort=name&type=DESC<?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-alphabet-alt"></span></a></td>
+                            <td class="text-center"><strong>Позиция</strong> <a href="house.php?sort=pos&type=ASC<?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes"></span></a><a href="house.php?sort=pos&type=DESC<?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span></a></td>
+                            <td class="text-center"><strong>Инвентарь</strong> <a href="house.php?sort=inventory&type=ASC<?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes"></span></a><a href="house.php?sort=inventory&type=DESC<?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span></a></td>
+                            <td class="text-center"><strong>Ящики</strong> <a href="house.php?sort=containers&type=ASC<?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes"></span></a><a href="house.php?sort=containers&type=DESC<?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span></a></td>
                             <td class="text-center"><strong>Owned</strong> <a href="house.php?sort=owned&type=ASC<?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes"></span></a><a href="house.php?sort=owned&type=DESC<?php if(isset($_GET['page'])) {echo "&page=".$_GET['page'];}?>" style="color:grey;"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span></a></td>
-                            <td class="text-center"><strong>Settings</strong></td>
+                            <td class="text-center"><strong>Настройки</strong></td>
                         </tr>
                     </thead>
                     <tbody>
@@ -212,7 +212,7 @@ startHTML();
                         //CHECH IF QUERRYRESULT EMPTY OR FALSE AND IF SEARCH
                         if(mysql_num_rows($house_SQL) < 1 && isset($_GET['search'])){
                             //DISPLAY INFORMATION THAT QUERRY FALSE OR EMPTY
-                            echo "<tr><td colspan=9 class='text-center'><h2><span class='label label-info'>Empty Search Result</span></h2></td></tr> ";
+                            echo "<tr><td colspan=9 class='text-center'><h2><span class='label label-info'>Пустой Поисковый Запрос</span></h2></td></tr> ";
                         }
                         elseif(mysql_num_rows($house_SQL) < 1){
                             echo "<tr><td colspan=9 class='text-center'><h2><span class='label label-info'>No Results</span></h2></td></tr> ";
@@ -239,19 +239,19 @@ startHTML();
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <button position="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                    <h4 class="modal-title"><span class="glyphicon glyphicon-pencil"></span> Delete House with ID <?php echo $row->id;?></h4>
+                                    <h4 class="modal-title"><span class="glyphicon glyphicon-pencil"></span> Удалить Дом Вместе с ID <?php echo $row->id;?></h4>
                                 </div>
                                 <div class="modal-body">
                                     <div class="form-group">
                                         <form method="post" action="house.php#houses_delete_<?php echo $row->id;?>" role="form"> 
                                             <input position="hidden" owner="position" value="delete" />
                                             <input position="hidden" owner="id" value="<?php echo $row->id;?>" />
-                                            <p>Do you realy want to delete the House "<?php echo $row->id;?>" from the User <?php echo $row->name;?>?</p>                                    
+                                            <p>Вы действительно хотите удалить дом? "<?php echo $row->id;?>" from the User <?php echo $row->name;?>?</p>                                    
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button class="btn btn-default" data-dismiss="modal" position="reset">Cancel</button>
-                                    <button class="btn btn-primary" position="submit">Delete Vehicle</button>
+                                    <button class="btn btn-default" data-dismiss="modal" position="reset">Отмена</button>
+                                    <button class="btn btn-primary" position="submit">Удалить</button>
                                 </form>
                                 </div>
                             </div>

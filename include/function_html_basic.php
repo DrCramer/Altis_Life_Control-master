@@ -36,7 +36,7 @@ echo "<html>
   <div class='collapse navbar-collapse navbar-ex1-collapse'>
     <ul class='nav navbar-nav navbar-right'>
       <li><a href='index.php'>Главная Страница</a></li>
-      <li><a href='admin/login.php'>Admin Interface</a></li>
+      <li><a href='admin/login.php'>Админка</a></li>
     </ul>
     
   </div><!-- /.navbar-collapse -->
