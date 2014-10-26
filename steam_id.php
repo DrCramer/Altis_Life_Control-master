@@ -17,7 +17,7 @@ startHTML();
     <div class="row">
         <ol class="breadcrumb">
             <li><a href="index.php">Start</a></li>
-            <li class="active">How to find your Steam ID</li>
+            <li class="active">Как найти ваш ID</li>
         </ol>
     </div>
     <div class="panel-group" id="accordion">
@@ -25,7 +25,7 @@ startHTML();
             <div class="panel-heading">
                 <h4 class="panel-title">
                     <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                        <h4>Step 1 - Starting Arma</h4>
+                        <h4>Шаг 1 - Запускаем Arma 3</h4>
                     </a>
                 </h4>
             </div>
@@ -35,7 +35,7 @@ startHTML();
                         <img src="img/steam_id_1.png" alt="Get Steam ID Picture 1" class="img-thumbnail">
                     </div>
                     <div class="col-md-6">
-                        <p>Start your Arma 3 and wait until you see the Main Menu. Now chose the Point "Configure".</p>
+                        <p>Запустите Arma 3. Теперь выберите пункт "Настройки".</p>
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@ startHTML();
             <div class="panel-heading">
                 <h4 class="panel-title">
                     <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                        <h4>Step 2 - Find your Way</h4>
+                        <h4>Шаг 2 - Найти ваш профиль</h4>
                     </a>
                 </h4>
             </div>
@@ -54,7 +54,7 @@ startHTML();
                         <img src="img/steam_id_2.png" alt="Get Steam ID Picture 1" class="img-thumbnail">
                     </div>
                     <div class="col-md-6">
-                        <p>The Menu will expand and you find all the Points where you can configre your Arma 3. Now click on the Point "Profile" to simply find you Steam ID.</p>
+                        <p>Выберите пункт "Профиль", чтобы найти ваш ID.</p>
                     </div>
                 </div>
             </div>
@@ -63,7 +63,7 @@ startHTML();
             <div class="panel-heading">
                 <h4 class="panel-title">
                     <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                        <h4>Step 3 - Find your Steam ID</h4>
+                        <h4>Шаг 3 - Найти ваш ID</h4>
                     </a>
                 </h4>
             </div>
@@ -73,7 +73,7 @@ startHTML();
                         <img src="img/steam_id_3.png" alt="Get Steam ID Picture 1" class="img-thumbnail">
                     </div>
                     <div class="col-md-6">
-                        <p>You will find all your Profiles you created. On the right Side you will find your unique Steam ID. <br> If you click on "Edit", you can simply Copy and Paste your Steam ID</p>
+                        <p>Здесь вы найдете все ваши созданные профили. С правой стороны вы найдете ваш ID. <br> Если вы нажмете "Изменить", то вы сможете скопировать\вставить ваш ID</p>
                     </div>
                 </div>
             </div>
