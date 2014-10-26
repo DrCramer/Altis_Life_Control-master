@@ -144,7 +144,7 @@ startHTML();
             <!-- End Error Check --> 
             <div class="row">
                 <ol class="breadcrumb">
-                    <li><a href="index.php">Start</a></li>
+                    <li><a href="index.php">Главная</a></li>
                     <li><a href="#">Settings</a></li>
                     <li class="active">Manage Logins</li>
                 </ol>

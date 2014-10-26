@@ -75,7 +75,7 @@
           </li>
         </ul>
         <ul class='nav navbar-nav navbar-right'>
-          <li><a href='../index.php'>Start Page</a></li>
+          <li><a href='../index.php'>Главная Страница</a></li>
             <p class='navbar-text'>Signed in as ". @$_SESSION['login_user'] ."</p>
         <form class='navbar-form navbar-right' role='search' action='logout.php' method='post'>
             <button class='btn btn-default' type='submit'>Logout</button>

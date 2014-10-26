@@ -124,7 +124,7 @@ startHTML();
    <div class="container" style="padding-top: 60px;">
             <div class="row">
                 <ol class="breadcrumb">
-                    <li><a href="index.php">Start</a></li>
+                    <li><a href="index.php">Главная</a></li>
                     <li class="active">Vehicle List</li>
                 </ol>
             </div>

@@ -134,7 +134,7 @@ else{
 <div class="row">
     <div class="row">
         <ol class="breadcrumb">
-            <li><a href="index.php">Start</a></li>
+            <li><a href="index.php">Главная</a></li>
             <li><a href="player.php">Player List</a></li>
             <li><a href="player.php">Player Editor</a></li>
             <li class="active"><?php echo $row->name; ?></li>
@@ -160,28 +160,28 @@ else{
                         <p class="text-center">
                         <?php 
                         if ($row->coplevel > 0){
-                            echo "<span class='label label-primary' style='margin-right:3px;'><strong>Cop ".$row->coplevel."</strong></span>";
+                            echo "<span class='label label-primary' style='margin-right:3px;'><strong>Коп ".$row->coplevel."</strong></span>";
                         }
                         else{
-                            echo "<span class='label label-default' style='margin-right:3px;'><strong>No Cop</strong></span>";
+                            echo "<span class='label label-default' style='margin-right:3px;'><strong>Не Коп</strong></span>";
                         }
                         if ($row->mediclevel > 0){
-                            echo "<span class='label label-danger' style='margin-right:3px;'><strong>Medic ".$row->mediclevel."</strong></span>";
+                            echo "<span class='label label-danger' style='margin-right:3px;'><strong>Медик ".$row->mediclevel."</strong></span>";
                         }
                         else{
-                            echo "<span class='label label-default' style='margin-right:3px;'><strong>No Medic</strong></span>";
+                            echo "<span class='label label-default' style='margin-right:3px;'><strong>Не Медик</strong></span>";
                         }
                         if ($row->donatorlvl > 0){
-                            echo "<span class='label label-success' style='margin-right:3px;'><strong>Donator ".$row->donatorlvl."</strong></span>";
+                            echo "<span class='label label-success' style='margin-right:3px;'><strong>VIP ".$row->donatorlvl."</strong></span>";
                         }
                         else{
-                            echo "<span class='label label-default' style='margin-right:3px;'><strong>No Donator</strong></span>";
+                            echo "<span class='label label-default' style='margin-right:3px;'><strong>Не VIP</strong></span>";
                         }
                         if($row->adminlevel > 0){
-                            echo "<span class='label label-info' style='margin-right:3px;'><strong>Admin ".$row->adminlevel."</strong></span>";
+                            echo "<span class='label label-info' style='margin-right:3px;'><strong>Админ ".$row->adminlevel."</strong></span>";
                         }
                         else{
-                            echo "<span class='label label-default' style='margin-right:3px;'><strong>No Admin</strong></span>";
+                            echo "<span class='label label-default' style='margin-right:3px;'><strong>Не Админ</strong></span>";
                         }
 ?>
                         </p>
@@ -192,16 +192,16 @@ else{
                     <p class="text-center">
 <?php
                 if ($row->arrested == 1) {
-                    echo "<span class='label label-danger' style='margin-right:3px;'>Arrested</strong></span>";
+                    echo "<span class='label label-danger' style='margin-right:3px;'>Арестован</strong></span>";
                 }
                 else {
-                    echo "<span class='label label-default' style='margin-right:3px;'>Not Arrested</strong></span>";
+                    echo "<span class='label label-default' style='margin-right:3px;'>Не Арестован</strong></span>";
                 }
                 if ($row->blacklist == 1) {
-                    echo "<span class='label label-danger' style='margin-right:3px;'>Blacklisted</strong></span>";
+                    echo "<span class='label label-danger' style='margin-right:3px;'>Заблокирован</strong></span>";
                 }
                 else {
-                    echo "<span class='label label-default' style='margin-right:3px;'>Not Blacklisted</strong></span>";
+                    echo "<span class='label label-default' style='margin-right:3px;'>Не Заблокирован</strong></span>";
                 }
                 ?>
                     </p>
@@ -233,11 +233,11 @@ else{
 <div class="row">
     <div class="panel panel-default">
     <ul class="nav nav-tabs" id="player_tabs">
-        <li class="active"><a href="#licenses">Licenses</a></li>
-        <li><a href="#civ_inventory">Civ Inventory</a></li>
-        <li><a href="#cop_inventory">Cop Inventory</a></li>
-        <li><a href="#vehicle">Vehicle</a></li>
-        <li><a href='#houses'>Houses</a></li>
+        <li class="active"><a href="#licenses">Лицензии</a></li>
+        <li><a href="#civ_inventory">Инвентарь Гражданского</a></li>
+        <li><a href="#cop_inventory">Инвентарь Полицейского</a></li>
+        <li><a href="#vehicle">Транспорт</a></li>
+        <li><a href='#houses'>Дома</a></li>
     </ul>
 <!-- TAB CONTENT -->
     <div id="player_tabs_content" class="tab-content">

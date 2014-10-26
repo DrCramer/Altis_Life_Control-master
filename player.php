@@ -48,7 +48,7 @@ else{
 <div class="row">
     <div class="row">
         <ol class="breadcrumb">
-            <li><a href="index.php">Start</a></li>
+            <li><a href="index.php">Главная</a></li>
             <li><a href="player.php">Player List</a></li>
             <li><a href="player.php">Player Editor</a></li>
             <li class="active"><?php echo $row->name; ?></li>
@@ -75,19 +75,19 @@ else{
                             echo "<span class='label label-primary' style='margin-right:3px;'><strong>Cop Level ".$row->coplevel."</strong></span>";
                         }
                         else{
-                            echo "<span class='label label-default' style='margin-right:3px;'><strong>No Cop</strong></span>";
+                            echo "<span class='label label-default' style='margin-right:3px;'><strong>Не Коп</strong></span>";
                         }
                         if ($row->donatorlvl > 0){
-                            echo "<span class='label label-success' style='margin-right:3px;'><strong>Donator ".$row->donatorlvl."</strong></span>";
+                            echo "<span class='label label-success' style='margin-right:3px;'><strong>VIP ".$row->donatorlvl."</strong></span>";
                         }
                         else{
-                            echo "<span class='label label-default' style='margin-right:3px;'><strong>No Donator</strong></span>";
+                            echo "<span class='label label-default' style='margin-right:3px;'><strong>Не VIP</strong></span>";
                         }
                         if($row->adminlevel > 0){
                             echo "<span class='label label-info' style='margin-right:3px;'><strong>Admin Level ".$row->adminlevel."</strong></span>";
                         }
                         else{
-                            echo "<span class='label label-default' style='margin-right:3px;'><strong>No Admin</strong></span>";
+                            echo "<span class='label label-default' style='margin-right:3px;'><strong>Не Админ</strong></span>";
                         }
 ?>
                         </p>
@@ -98,16 +98,16 @@ else{
                     <p class="text-center">
 <?php
                 if ($row->arrested == 1) {
-                    echo "<span class='label label-danger' style='margin-right:3px;'>Arrested</strong></span>";
+                    echo "<span class='label label-danger' style='margin-right:3px;'>Арестован</strong></span>";
                 }
                 else {
-                    echo "<span class='label label-default' style='margin-right:3px;'>Not Arrested</strong></span>";
+                    echo "<span class='label label-default' style='margin-right:3px;'>Не Арестован</strong></span>";
                 }
                 if ($row->blacklist == 1) {
-                    echo "<span class='label label-danger' style='margin-right:3px;'>Blacklisted</strong></span>";
+                    echo "<span class='label label-danger' style='margin-right:3px;'>Заблокирован</strong></span>";
                 }
                 else {
-                    echo "<span class='label label-default' style='margin-right:3px;'>Not Blacklisted</strong></span>";
+                    echo "<span class='label label-default' style='margin-right:3px;'>Не Заблокирован</strong></span>";
                 }
                 ?>
                     </p>
@@ -131,18 +131,18 @@ else{
 <div class="row">
     <div class="panel panel-default">
     <ul class="nav nav-tabs" id="player_tabs">
-        <li class="active"><a href="#licenses">Licenses</a></li>
-        <li><a href="#civ_inventory">Civ Inventory</a></li>
-        <li><a href="#cop_inventory">Cop Inventory</a></li>
-        <li><a href="#vehicles">Vehicles</a></li>
-        <li><a href='#houses'>Houses</a></li>
+        <li class="active"><a href="#licenses">Лицензии</a></li>
+        <li><a href="#civ_inventory">Инвентарь Гражданского</a></li>
+        <li><a href="#cop_inventory">Инвентарь Полицейского</a></li>
+        <li><a href="#vehicles">Транспорт</a></li>
+        <li><a href='#houses'>Дома</a></li>
     </ul>
 <!-- TAB CONTENT -->
     <div id="player_tabs_content" class="tab-content">
         <div class="tab-pane fade active in" id="licenses">
             <div class="panel panel-default">
                 <div class="panel-body">
-                    CIV LICENSES
+                    Лицензии Гражданского
                 </div>            
                 <div class="well ">
                     <!-- CIV Licenses CONTENT -->
@@ -173,7 +173,7 @@ else{
             </div>
             <div class="panel panel-default">
                 <div class="panel-body">
-                    COP LICENSES
+                    Лицензии Полицейского
                 </div>            
                 <div class="well ">
                     <!-- COP Licenses CONTENT -->
@@ -198,7 +198,7 @@ else{
             </div>
             <div class="panel panel-default">
                 <div class="panel-body">
-                    MEDIC LICENSES
+                    Лицензии Медика
                 </div>            
                 <div class="well ">
                     <!-- COP Licenses CONTENT -->
@@ -248,12 +248,12 @@ else{
             <table class="table table-hover">
                 <tr>
                     <td><strong>#</strong> </td>
-                    <td><strong>Name</strong></td>
-                    <td><strong>Side</strong></td>
-                    <td><strong>Type</strong></td>
+                    <td><strong>Название</strong></td>
+                    <td><strong>Тип</strong></td>
+                    <td><strong>Сторона</strong></td>
                     <td><strong>Alive</strong></td>
                     <td><strong>Active</strong></td>
-                    <td><strong>Inventory</strong></td>
+                    <td><strong>Инвентарь</strong></td>
                 </tr>
             <?php while($row_veh = mysql_fetch_object($vehicle_SQL)){ ?>
                 <tr>
@@ -278,7 +278,7 @@ else{
             <table class="table table-hover">
                 <tr>
                     <td><strong>#</strong> </td>
-                    <td><strong>House ID</strong></td>
+                    <td><strong>ID Дома</strong></td>
                     <td><strong>Storage</strong></td>
                     <td><strong>Trunk</strong></td>
                     <td><strong>Weapon Storrage</strong></td>

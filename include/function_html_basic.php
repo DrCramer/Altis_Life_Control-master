@@ -35,7 +35,7 @@ echo "<html>
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class='collapse navbar-collapse navbar-ex1-collapse'>
     <ul class='nav navbar-nav navbar-right'>
-      <li><a href='index.php'>Start Page</a></li>
+      <li><a href='index.php'>Главная Страница</a></li>
       <li><a href='admin/login.php'>Admin Interface</a></li>
     </ul>
     

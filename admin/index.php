@@ -16,7 +16,7 @@ startHTML();
     <div class="row">
         <div class="row">
             <ol class="breadcrumb">
-                <li><a href="index.php">Start</a></li>
+                <li><a href="index.php">Главная</a></li>
             </ol>
         </div>
     </div>
